@@ -107,8 +107,22 @@ const List = (props) => {
     );
 }
 ```
-7.Why void is needed here in this case?
+7. Why void is needed here in this case?
 What happens without it?
 ```jsx
 useEffect(() => void setInterval(someFunction, 1000))
 ```
+
+8. What are we trying to achieve by using the following line:
+```js
+let self = this;
+```
+
+- [ ] By using let, it makes the value of this mutable, so that we can change its
+properties
+- [ ] We assign the value of this to a variable to be able to use it when context
+changes
+- [ ] By saving the value of this we enable the use of arrow functions to access
+outer context
+- [ ] We cannot access this directly in strict mode, so we need to save a
+reference to it
