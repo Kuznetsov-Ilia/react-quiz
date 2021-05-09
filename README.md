@@ -118,11 +118,19 @@ useEffect(() => void setInterval(someFunction, 1000))
 let self = this;
 ```
 
-- [ ] By using let, it makes the value of this mutable, so that we can change its
+- [ ] __a)__ By using let, it makes the value of this mutable, so that we can change its
 properties
-- [ ] We assign the value of this to a variable to be able to use it when context
+- [ ] __b)__ We assign the value of this to a variable to be able to use it when context
 changes
-- [ ] By saving the value of this we enable the use of arrow functions to access
+- [ ] __c)__ By saving the value of this we enable the use of arrow functions to access
 outer context
-- [ ] We cannot access this directly in strict mode, so we need to save a
+- [ ] __d)__ We cannot access this directly in strict mode, so we need to save a
 reference to it
+
+9. Which of these statements is true for JavaScript?
+
+- [ ] __a)__ The value of "this" signifies the current context
+- [ ] __b)__ The value of "this" signifies the current scope
+- [ ] __c)__ You can modify the scope of a function using the .bind method
+- [ ] __d)__ You can modify the context of a function using the .apply method
+
