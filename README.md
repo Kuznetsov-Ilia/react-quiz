@@ -107,3 +107,8 @@ const List = (props) => {
     );
 }
 ```
+7.Why void is needed here in this case?
+What happens without it?
+```jsx
+useEffect(() => void setInterval(someFunction, 1000))
+```
